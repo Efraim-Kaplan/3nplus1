@@ -18,6 +18,7 @@ def solver3Nplus1(number):
         return mathList
     else:
         mathList.append(number2)
+        mathCompareList.add(number2)
         return (solver3Nplus1(number2))
 
 
