@@ -4,7 +4,7 @@
 inputStr = input("Number for solver:")
 number = int(inputStr)
 mathList = [number]
-
+mathCompareList = {number}
 
 def solver3Nplus1(number):
     if number % 2 == 0:
@@ -13,7 +13,7 @@ def solver3Nplus1(number):
     else:
         number2 = 3*number+1
         number = number2
-    if number2 in mathList:
+    if number2 in mathCompareList:
         mathList.append(number2)
         return mathList
     else:
